@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get 'test/index'
+  # En este caso estamos creando un recurso, el cual dirije a un controlador y a una accion. El controlador deber estar separado por # de la accion
+  # get 'recurso' to: 'controlador#accion'
+  get '/bienvenida', to: 'home#index'
+
+
 end
